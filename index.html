@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bunny | AI & ML Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+/* ================= BASE ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Space Grotesk', sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background: radial-gradient(circle at top, #0a0a0a, #000000);
+  color:#e5e7eb;
+}
+
+/* ================= NAVBAR ================= */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(0,0,0,0.75);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,215,0,0.15);
+  z-index:1000;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:18px 8%;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  color:gold;
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  color:#cfcfcf;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:gold;
+}
+
+/* ================= HERO ================= */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:120px 8% 60px;
+  gap:40px;
+}
+
+/* LEFT TEXT */
+.hero-text{
+  flex:1;
+  max-width:600px;
+}
+
+.hero-text h1{
+  font-size:52px;
+  color:gold;
+}
+
+.hero-text h2{
+  color:#ffffff;
+  margin-top:10px;
+}
+
+.hero-text p{
+  color:#b5b5b5;
+  margin-top:12px;
+}
+
+/* RIGHT IMAGE FIXED */
+.hero-img{
+  flex:1;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.hero-img img{
+  width:340px;
+  height:400px;
+  object-fit:cover;
+  border-radius:20px;
+  border:2px solid gold;
+  box-shadow:0 0 35px rgba(255,215,0,0.25);
+}
+
+/* ================= BUTTONS ================= */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 18px;
+  border-radius:10px;
+  background:linear-gradient(135deg, gold, #b8860b);
+  color:#000;
+  font-weight:700;
+  margin-right:10px;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 25px rgba(255,215,0,0.4);
+}
+
+.btn2{
+  background:transparent;
+  border:1px solid gold;
+  color:gold;
+}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:80px 8%;
+}
+
+.title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:40px;
+  color:gold;
+  font-weight:700;
+}
+
+/* ================= CARDS ================= */
+.card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,215,0,0.15);
+  padding:20px;
+  border-radius:14px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:gold;
+  box-shadow:0 0 20px rgba(255,215,0,0.15);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* HIGHLIGHT */
+.highlight{
+  color:gold;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid rgba(255,215,0,0.1);
+  color:#b5b5b5;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-img{
+    justify-content:center;
+  }
+
+  .hero-text h1{
+    font-size:38px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+<div class="navbar">
+  <div class="logo">Bunny.</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-text">
+    <h1>Bunny Naga Pavan Kalyan</h1>
+    <h2>AI & ML Engineer</h2>
+
+    <p>
+      Passionate AI/ML developer building <span class="highlight">chatbots</span>,
+      <span class="highlight">LLM systems</span> and real-world AI applications.
+    </p>
+
+    <a href="#" class="btn">Download Resume</a>
+    <a href="#contact" class="btn btn2">Contact</a>
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="hero-img">
+    <img src="https://via.placeholder.com/340x400" alt="profile">
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="title">About Me</div>
+<div class="card">
+AI & ML enthusiast focused on building intelligent systems, automation, and real-world AI applications.
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<div class="title">Education</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>B.Tech AIML</h3>
+<p>2023 - Present</p>
+</div>
+
+<div class="card">
+<h3>Intermediate</h3>
+<p class="highlight">97.3%</p>
+</div>
+
+<div class="card">
+<h3>SSC</h3>
+<p class="highlight">93.7%</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="title">Skills</div>
+
+<div class="grid">
+<div class="card">C Language</div>
+<div class="card">Data Structures</div>
+<div class="card">Python</div>
+<div class="card">DBMS</div>
+<div class="card">JavaScript</div>
+<div class="card">HTML & CSS</div>
+<div class="card">AI / ML</div>
+<div class="card">NumPy</div>
+<div class="card">Pandas</div>
+<div class="card">Matplotlib</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="title">Projects</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Medical Chatbot</h3>
+<p>LLM + API based AI medical assistant (ongoing).</p>
+</div>
+
+<div class="card">
+<h3>Student Platform</h3>
+<p>AI-based student learning platform.</p>
+</div>
+
+<div class="card">
+<h3>AI Chatbot</h3>
+<p>Machine learning conversational chatbot.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<div class="title">Certifications</div>
+
+<div class="grid">
+<div class="card">NPTEL Certification</div>
+<div class="card">Hackathon Participation</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="title">Contact</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Email</h3>
+<p class="highlight">bunny28373@gmail.com</p>
+</div>
+
+<div class="card">
+<h3>GitHub</h3>
+<a class="highlight" href="https://github.com/bunny-naga-pavan-kalyan-bijinavemula" target="_blank">
+GitHub Profile
+</a>
+</div>
+
+<div class="card">
+<h3>LinkedIn</h3>
+<a class="highlight" href="https://www.linkedin.com/in/bunny-naga-pavan-kalyan-b40907331" target="_blank">
+LinkedIn Profile
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Bunny | AI & ML Engineer
+</footer>
+
+</body>
+</html>
